@@ -1,0 +1,32 @@
+html{
+ background: url(IMG-2078.jpg) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.title{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  background-color: #cacfce;
+  width : 33%;
+}
+
+.list {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #cacfce;
+  width: 20%;
+}
+
+.text {
+  width = 88%
+}
+

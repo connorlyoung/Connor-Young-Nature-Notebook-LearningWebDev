@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="treestyle.css"/>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Connor Young's Nature Notebook</h1>
+          <section>
+            <!--TODO: Add link to tree shots-->
+            <p>This website is a showcase of nature photos I had taken over the course of my freshman year exploring the dense woods and cityscape around the <a href="https://www.ucsc.edu/" target = _blank>University of California, Santa Cruz</a></p>
+      </section>
+      </div>
+      <section>
+	<div class="list">
+          <h2>Area List:</h2>
+	  <li>North Campus</li>
+          <li>West Campus</li>
+	  <li>East Campus</li>
+	</div>
+      </section>
+    </main>
+  </body>
+</html>
