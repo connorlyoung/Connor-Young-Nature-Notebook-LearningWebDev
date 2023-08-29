@@ -1,2 +1,6 @@
-# Learning_HTML_CSS
- These are all the files I have related to my ongoing experience of attempting to learn front end web development using freecodecamp.org in order to eventually create a website that will host all of my nature photos that I have taken throughout my time at college!
+# Connor Young's Nature Notebook / Learning HTML and CSS
+
+Hello, my name is Connor Young and I am a student studying computer science at the University of California, Santa Cruz. I decided learning front end web development would be a good skill for me to pick up on my path into the CS workforce! Because of that, I decided to start a free course on HTML and CSS at freecodecamp.org with my spare time at the end of my summer. As I progress through the couple of courses available on these languages, I want to steadily build a website where I can host all of my pictures of nature that I have taken throughout my time studying at the University of California, Santa Cruz. This repository will contain what I have created with what I have learned so far!
+
+# Installation
+If you would like to see the progress I've made so far in learning HTML and CSS, then you should be able to clone the repository and make a local instance of the website on your own computer (provided that all files in the repository are in the same file on your computer).
