@@ -1,32 +1,81 @@
 html{
- background: url(IMG-2078.jpg) no-repeat center center fixed;
+ background: url(images/IMG-2078.jpg) no-repeat center center fixed;
  -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
 }
 
+@font-face {
+  font-family: cabin-sketch;
+  src: url(fonts/CabinSketch-Regular.ttf);
+}
+
 .title{
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-  padding-right: 5%;
+  border: 5px solid #000000AF;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #39802dAF;
+}
+
+.first{
+  max-width: 300px;
+  min-width: 150px;
+  height: 150px;
+  padding: 0 5%;
+}
+
+.second {
+  width: 200px;
+  height: 90px;
+}
+
+h1, h2{
   text-align: center;
-  background-color: #cacfce;
-  width : 33%;
+  font-family: cabin-sketch;
 }
 
-.list {
+.descOne{
+  width: 480px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 0;
+}
+
+.description{
+  margin: 20px 0;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #cacfce;
-  width: 20%;
+  font-weight: bold;
 }
 
-.text {
-  width = 88%
+.area {
+  border: 5px solid rgb(0,0,0);
+  max-width: 1500px;
+  height: auto;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  justify-content: center;
 }
 
+.loc{
+  background-image: url(images/IMG_0916.jpg);
+  background-size: contain;
+  width :460px;
+  height: 614px;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.textBorder {
+  width: 80px;
+  height: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
