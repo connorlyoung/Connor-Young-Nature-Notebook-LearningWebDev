@@ -1,0 +1,92 @@
+html{
+  background: url(../images/IMG-2693.jpg) no-repeat center center fixed;
+  background-size: cover;
+ }
+
+h1, p{
+  margin-top: 0;
+  text-align: center;
+  color: white;
+}
+
+p {
+  margin-bottom: 0.75em
+}
+
+body{
+  background: linear-gradient(.25turn, #122740DD 5%, #0d3d75, #122740DD 95%);
+  margin: 0 auto;
+  width: 50vw;
+  min-width: 480px;
+  height: auto;
+  min-height: 100vh;
+}
+
+label {
+  color: white;
+  display: block;
+  padding: 0.75em;
+  padding-bottom: 0.5em;
+}
+
+
+fieldset {
+  width: 90%;
+  border: None;
+  border-bottom: 4px solid #1d6296;
+  margin: 60px auto;
+  padding-bottom: 60px;
+}
+
+fieldset:first-of-type {
+  border-top: 4px solid #1d6296;
+  padding-top: 60px;
+}
+
+fieldset:last-of-type {
+  border: none;
+  padding: 1rem auto;
+}
+
+
+input {
+  border: none;
+  background-color: #1d6296;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+select {
+  margin-top: 0.5em;
+  display: block;
+  background-color: #1d6296;
+  color: #ffffff;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+textArea{
+  margin-top: 0.5em;
+  background-color: #1d6296;
+  width: 100%;
+  color: #ffffff;
+  display: block;
+  min-height: 3em;
+}

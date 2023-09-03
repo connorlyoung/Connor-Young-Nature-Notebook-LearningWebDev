@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/feedbackStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Notebook: Feedback</title>
+  </head>
+  <body>
+    <h1 id="title">Natural Feedback Page</h1>
+    <p id="description">This is a survey form for any questions, comments, or feedback on this project</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="handle-label" for="handle">Please input a <b>handle</b> to individualize the feedback by:
+          <input type="text" id="handle" placeholder="Connor Young" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What portion of the project is this feedback for?
+          <select id="dropdown">
+            <option value="None">(select one)</option>
+            <option value="Design">Design</option>
+            <option value="Photography">Photography</option>
+            <option value="Navigation">Navigation</option>
+            <option value="Navigation">Functionality</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback">What is your feedback?
+          <textArea id="feedback" placeholder="Feedback goes here."></textArea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+
