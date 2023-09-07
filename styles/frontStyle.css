@@ -1,0 +1,185 @@
+/*Defaults all elements in the html file to have no margin nor padding, 
+  and to factor border sizing into the size of an element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Sets the html background to be an image that covers the screen and does 
+  not repeat itself, as well as setting the background to take up the 
+  entire screen*/
+html{
+  background: url(../images/IMG-0862.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height:100%;
+  width: 100%;
+}
+
+/*Adds a font to the styling sheet*/
+@font-face {
+  font-family: cabin-sketch;
+  src: url(../fonts/CabinSketch-Regular.ttf);
+}
+
+/*Sets slightly see-through background for image background of html, with 
+  height scaling to the parent element's*/
+body{
+  width: 100%;
+
+  height: auto;
+  min-height: 100%;
+
+  background-color: #719b257F;
+}
+
+/*Creates a central banner for the page's information to be placed on, 
+  scaling to the height it needs in order to fit all child elements 
+  correctly*/
+main{
+  width: 50vw;
+  min-width: 480px;
+
+  height: auto;
+  min-height: 100vh;
+
+  margin: 0 auto 0;
+  padding-top: 40px;
+
+  background: linear-gradient(.25turn, #2e6409FA 10%, #2c4928,  #2e6409FA 90%);
+}
+
+
+/*Sets all the styling for header elements (beside size)*/
+h1, h2{
+
+  margin: 0 auto;
+
+  color: #192819;
+  font-family: cabin-sketch;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  background-color: #719b25AD;
+  box-shadow: 0px 0px 50px #192819;
+  border: 5px solid #000000AF;
+}
+
+/*Sets sizing for the header elements*/
+h1 {
+  width: 80%;
+  height: 150px;
+}
+
+h2 {
+  width: 80%;
+  height: 90px;
+}
+
+/*Sets styling for the description classed elements*/
+.description{
+  margin: 20px auto;
+
+  max-width: 480px;
+  width: 60%;
+
+  color: #cbe368;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Resets color for <a> elements of description (doesn't work for some 
+  reason in original)*/
+a[class="description"] {
+  color: #cbe368;
+
+  display: flex;
+  justify-content: center;
+}
+
+/*Changes color <a> elements of description when hovered*/
+.description a:hover{
+  color: #192819;
+}
+
+/*Creates a grid displayed div with modular size (fits what it can into one
+  row, creates another if it can't)*/
+.area {
+  margin: 40px auto;
+
+  max-width: 1600px;
+  width: 95%;
+
+  height: auto;
+
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+
+/*These div elements contain the images and the text labels for site traversal*/
+.loc{
+  margin-bottom: 40px;
+
+  width :460px;
+  height: 610px;
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border: 5px solid #192819;
+  box-shadow: 0px 0px 50px #192819;
+}
+
+/*Sets images to allow text on top of them, as well as being properly placed
+  in the .loc frame*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+  position: absolute;
+  z-index: 2;
+}
+
+/*Creates a div that holds the text label for the specific*/
+.textBorder {
+  width: 80px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+
+  background-color: #719b25;
+  border: 5px solid #000000AF;
+}
+
+
+/*Properly formats anchor element for entire .loc element*/
+.area a {
+  font-family:'Arial Narrow', Arial, sans-serif;
+  color: #192819;
+  font-weight: bold;
+  text-decoration: none;
+
+  display: flex;
+  justify-self: center;
+}
+
+/*Changes the styling of .loc and child elements when hovered*/
+.loc:hover, .loc:hover .textBorder {  
+  color: #719b25;
+
+  background-color: #192819;
+  border-color: #719b25;
+}
