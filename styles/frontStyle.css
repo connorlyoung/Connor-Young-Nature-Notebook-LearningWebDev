@@ -112,14 +112,15 @@ a[class="description"] {
   margin: 40px auto;
 
   max-width: 1600px;
-  width: 95%;
+  width: 90%;
 
-  height: auto;
+  height: 100%;
 
   display: grid;
   justify-self: center;
   grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-  justify-content: space-between;
+  justify-content: space-around;
+
   column-gap: 40px;
 }
 
@@ -135,6 +136,7 @@ a[class="description"] {
   display: flex;
   justify-content: center;
   align-items: center;
+
   
   border: 5px solid #192819;
   box-shadow: 0px 0px 50px #192819;
