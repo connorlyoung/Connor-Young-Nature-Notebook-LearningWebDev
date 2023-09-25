@@ -1,5 +1,12 @@
 /*Defaults all elements in the html file to have no margin nor padding, 
   and to factor border sizing into the size of an element */
+:root {
+  --body-bgc: #719b257F;
+  --dark-green: #192819;
+  --yelowish-green: #cbe368;
+  --pear-green: #719b25;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,7 +71,7 @@ h1, h2{
   align-items: center;
 
   background-color: #719b25AD;
-  box-shadow: 0px 0px 50px #192819;
+  box-shadow: 0px 0px 50px var(--dark-green);
   border: 5px solid #000000AF;
 }
 
@@ -86,7 +93,7 @@ h2 {
   max-width: 480px;
   width: 60%;
 
-  color: #cbe368;
+  color: var(--yelowish-green);
   font-family:'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   text-align: center;
@@ -95,7 +102,7 @@ h2 {
 /*Resets color for <a> elements of description (doesn't work for some 
   reason in original)*/
 a[class="description"] {
-  color: #cbe368;
+  color: var(--yelowish-green);
 
   display: flex;
   justify-content: center;
@@ -103,7 +110,7 @@ a[class="description"] {
 
 /*Changes color <a> elements of description when hovered*/
 .description a:hover{
-  color: #192819;
+  color: var(--dark-green);
 }
 
 /*Creates a grid displayed div with modular size (fits what it can into one
@@ -138,8 +145,8 @@ a[class="description"] {
   align-items: center;
 
   
-  border: 5px solid #192819;
-  box-shadow: 0px 0px 50px #192819;
+  border: 5px solid var(--dark-green);
+  box-shadow: 0px 0px 50px var(--dark-green);
 }
 
 /*Sets images to allow text on top of them, as well as being properly placed
@@ -162,7 +169,7 @@ img {
   justify-content: center;
   z-index: 3;
 
-  background-color: #719b25;
+  background-color: var(--pear-green);
   border: 5px solid #000000AF;
 }
 
@@ -180,8 +187,8 @@ img {
 
 /*Changes the styling of .loc and child elements when hovered*/
 .loc:hover, .loc:hover .textBorder {  
-  color: #719b25;
+  color: var(--pear-green);
 
   background-color: #192819;
-  border-color: #719b25;
+  border-color: var(--pear-green);
 }
